@@ -1,5 +1,7 @@
 import typer
 
+from app.commands import metadata_app
+
 app = typer.Typer()
 
 
@@ -12,6 +14,9 @@ def hello(name: str):
 def goodbbye(name: str):
     """GoodBye"""
     typer.echo("goodbye")
+
+
+app.add_typer(metadata_app, name="metadata")
 
 if __name__ == "__main__":
     app()

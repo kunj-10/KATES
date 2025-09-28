@@ -3,7 +3,6 @@ import re
 import httpx
 import typer
 
-
 class MetadataService:
     @staticmethod
     def download_metadata_jsons(BASE_URL: str, OUT_DIR: str):
