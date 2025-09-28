@@ -19,7 +19,6 @@ def kmer_count_record(seq: str, k: int = K, kmers: List[str] = KMERS) -> List[in
     counts = Counter([seq[i : i + k] for i in range(len(seq) - k + 1)])
     return [counts.get(kmer, 0) for kmer in kmers]
 
-
 def parse_fasta_description(description: str) -> Dict[str, Optional[str]]:
     description = description.strip()
 
