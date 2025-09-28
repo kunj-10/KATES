@@ -6,5 +6,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "httpx>=0.28.1",
+    "scikit-learn>=1.7.2",
+    "tensorflow>=2.20.0",
     "typer[all]>=0.19.2",
 ]
