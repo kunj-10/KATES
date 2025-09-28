@@ -6,7 +6,7 @@ preprocessing_app = typer.Typer()
 
 
 @preprocessing_app.command()
-def read(file_path: str, output_fasta: str = "final.fasta"):
+def load(file_path: str, output_fasta: str = "final.fasta"):
     """
     Takes the file path to the .tar.gz files and get fasta files from them
     """
