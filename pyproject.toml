@@ -1,0 +1,9 @@
+[project]
+name = "kates"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "typer[all]>=0.19.2",
+]
