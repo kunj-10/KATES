@@ -1,6 +1,6 @@
 import typer
 
-from app.commands import metadata_app
+from app.commands import metadata_app, preprocessing_app
 
 app = typer.Typer()
 
@@ -10,13 +10,15 @@ def hello(name: str):
     """Say hello"""
     typer.echo(f"Hello {name}!")
 
-@app.command()  
+
+@app.command()
 def goodbbye(name: str):
     """GoodBye"""
     typer.echo("goodbye")
 
 
 app.add_typer(metadata_app, name="metadata")
+app.add_typer(preprocessing_app, name="preprocess")
 
 if __name__ == "__main__":
     app()
